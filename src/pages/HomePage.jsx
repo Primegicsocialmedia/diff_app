@@ -40,20 +40,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* 2 Sections with Different Animations */}
-      {[...Array(2)].map((_, index) => (
-        <motion.section
-          key={index}
-          className={`h-96 flex items-center justify-center bg-gray-${(index % 9) + 1}00`}
-          initial={{ opacity: 0 }}
-          animate={animations[index % animations.length].animation}
-          transition={animations[index % animations.length].transition}
-        >
-          <h2 className="text-4xl font-bold">
-            Section {index + 1}
-          </h2>
-        </motion.section>
-      ))}
+      
     </div>
   );
 };
