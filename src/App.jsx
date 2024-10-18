@@ -1,3 +1,4 @@
+import Footer from "./components/layouts/Footer";
 import Header from "./components/layouts/Header";
 import Router from "./router/router";
 
@@ -8,6 +9,7 @@ const App = () => {
       <div className="bg-gray-100 max-w-7xl mx-auto">
         <Router />
       </div>
+      <Footer/>
     </div>
   );
 };
